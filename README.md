@@ -14,15 +14,15 @@ VANYA features a 3-Agent pipeline reasoning over input data to produce structure
 [ Photo / Voice Input ] 
        │
        ▼
- 🤖 1. PRODUCT AGENT (Multimodal Vision Engine - Gemini 2.5 Flash / Groq LLM)
+ 1. PRODUCT AGENT (Multimodal Vision Engine - Gemini 2.5 Flash / Groq LLM)
        │  • Analyzes raw image pixels for craft subcategory, materials, dimensions, colors & origin
        │  • Enforces mandatory vs optional field matrix by craft category (Sarees, Pottery, Bamboo, Dolls)
        ▼
- 🤖 2. PRICE AGENT (Marketplace Benchmarking Engine)
+ 2. PRICE AGENT (Marketplace Benchmarking Engine)
        │  • Queries live marketplace catalog items for identical/similar craft categories
        │  • Suggests Fair Market Range & midpoint with zero-middleman 100% direct remittance
        ▼
- 🤖 3. MARKETING AGENT (Multi-Channel Promotion & Buyer Digest Matcher)
+ 3. MARKETING AGENT (Multi-Channel Promotion & Buyer Digest Matcher)
        │  • Synthesizes SEO tags, Instagram hooks, WhatsApp broadcasts, and Telegram alerts
        │  • Matches subscriber preference profiles (location, budget, craft type)
        ▼
@@ -31,9 +31,9 @@ VANYA features a 3-Agent pipeline reasoning over input data to produce structure
 
 ---
 
-## 🚀 Core Platform Capabilities
+## Core Platform Capabilities
 
-### 1. 📸 Multimodal Product Intelligence (Product Agent)
+### 1. Multimodal Product Intelligence (Product Agent)
 * **Real Pixel Vision**: Uses Google Gemini Multimodal Vision API (`gemini-2.5-flash`) to perform real visual analysis of uploaded/captured craft photos.
 * **Category Schema Enforcement**: Dynamically adapts schema rules for:
   * **Sarees**: Material, weave technique, length/width dimensions, primary colors.
@@ -41,24 +41,24 @@ VANYA features a 3-Agent pipeline reasoning over input data to produce structure
   * **Bamboo Baskets**: Natural fibers, weaving technique, dimensions, care notes.
   * **Dolls & Toys**: Softwood/woodturn craft, height, cultural story lineage.
 
-### 2. 💎 Fair Market Valuation (Price Agent)
+### 2. Fair Market Valuation (Price Agent)
 * **Real Marketplace Benchmarking**: Dynamically calculates price guidance derived strictly from active marketplace catalog items in the same craft category.
 * **Transparent Valuation**: Provides bulleted AI reasoning explaining why the range was selected.
 
-### 3. 📣 Multi-Channel Syndication (Marketing Agent)
+### 3. Multi-Channel Syndication (Marketing Agent)
 * **Tailored Platform Copy**: Generates customized copy for VANYA Storefront SEO, Instagram captions, WhatsApp Interest Broadcasts, and Telegram digest channels.
 * **Buyer Preference Matching**: Cross-references craft categories and price points against active buyer profiles.
 
-### 4. 🛒 Buyer Experience & Direct Artisan Cart
+### 4. Buyer Experience & Direct Artisan Cart
 * **Catalog Exploration**: Filter by craft category, price range, regional artisan cluster, or search query.
 * **Functional Cart & Checkout**: Slide-over cart drawer with quantity adjustments, direct remittance indicators, and simulated order placement.
 
-### 5. 📊 Seller Business Analytics Dashboard
+### 5. Seller Business Analytics Dashboard
 * **Real-time Stats**: Track total active listed crafts, direct sales revenue, orders received, and AI marketing reach.
 * **Order Management**: Monitor customer orders with buyer locations, ordered items, payment status, and dispatch timelines.
 * **AI Market Insights**: Dynamic pricing recommendations and buyer digest subscriber activity.
 
-### 6. 🔐 Dual-Role Authentication System
+### 6. Dual-Role Authentication System
 * Switch between **Buyer** and **Artisan Vendor** modes.
 * Quick 1-Click Demo Logins for instant testing.
 * Role-based access control protecting listing creation for verified sellers.
@@ -79,7 +79,7 @@ VANYA features a 3-Agent pipeline reasoning over input data to produce structure
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 VANYA/
@@ -116,7 +116,7 @@ VANYA/
 
 ---
 
-## 🚦 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Prerequisites
 Ensure Node.js (v18+) is installed on your system.
@@ -147,5 +147,5 @@ Open **http://localhost:5173/** in your browser.
 
 ---
 
-## 📄 License
+## License
 Distributed under the MIT License. See `LICENSE` for details.
