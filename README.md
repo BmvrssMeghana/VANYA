@@ -64,6 +64,11 @@ VANYA features a 3-Agent pipeline reasoning over input data to produce structure
 * Role-based access control protecting listing creation for verified sellers.
 
 ---
+## Architecture Diagram
+<img width="958" height="1600" alt="image" src="https://github.com/user-attachments/assets/1d91eb1a-5169-4494-a0e8-91615012bcb0" />
+
+---
+---
 
 ## 🛠 Tech Stack
 
