@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* =========================================================
+   VANYA COLOR SYSTEM
+========================================================= */
+
+:root {
+    --chocolate: #5d3023;
+    --copper: #895737;
+    --blush: #d9b49d;
+    --ivory: #f2e9dc;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Faustina", serif;
+    background: var(--chocolate);
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.login-page {
+    min-height: 100vh;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 40px 20px;
+}
+
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.login-card {
+    width: min(460px, 85vw);
+
+    background: var(--ivory);
+
+    border-radius: 20px;
+
+    padding: 38px 42px 30px;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.35);
+
+    color: var(--chocolate);
+
+    text-align: center;
+}
+
+/* =========================================================
+   CARD LOGO
+========================================================= */
+
+.card-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 15px;
+
+    color: var(--chocolate);
+
+    font-size: 22px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.small-logo-mark {
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.login-card h1 {
+    font-size: 34px;
+
+    line-height: 1.1;
+
+    font-weight: 650;
+
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+
+    line-height: 1.45;
+
+    color: var(--copper);
+
+    margin-bottom: 24px;
+}
+
+/* =========================================================
+   BUYER / SELLER SWITCH
+========================================================= */
+
+.role-switch {
+    display: flex;
+
+    width: 100%;
+
+    background: var(--blush);
+
+    border-radius: 30px;
+
+    padding: 4px;
+
+    margin-bottom: 24px;
+}
+
+.role-switch button {
+    flex: 1;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--chocolate);
+
+    padding: 10px;
+
+    border-radius: 24px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.role-switch button.active {
+    background: var(--chocolate);
+
+    color: var(--ivory);
+
+    box-shadow: 0 4px 10px rgba(93, 48, 35, 0.2);
+}
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.input-group {
+    text-align: left;
+
+    margin-bottom: 17px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid var(--blush);
+
+    border-radius: 9px;
+
+    background: #fffaf4;
+
+    color: var(--chocolate);
+
+    padding: 0 14px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.input-group input::placeholder {
+    color: var(--copper);
+    opacity: 0.65;
+}
+
+.input-group input:focus {
+    border-color: var(--copper);
+
+    box-shadow:
+        0 0 0 3px rgba(137, 87, 55, 0.12);
+}
+
+/* =========================================================
+   FORGOT PASSWORD
+========================================================= */
+
+.forgot-password {
+    text-align: right;
+
+    margin-top: -5px;
+
+    margin-bottom: 18px;
+}
+
+.forgot-password button {
+    border: none;
+
+    background: none;
+
+    color: var(--copper);
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.continue-btn {
+    width: 100%;
+
+    height: 49px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: var(--chocolate);
+
+    color: var(--ivory);
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.continue-btn:hover {
+    background: var(--copper);
+
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 22px 0;
+}
+
+.divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--blush);
+}
+
+.divider p {
+    font-size: 13px;
+
+    color: var(--copper);
+
+    font-weight: 600;
+}
+
+/* =========================================================
+   GOOGLE BUTTON
+========================================================= */
+
+.google-btn {
+    width: 100%;
+
+    height: 47px;
+
+    border: 1px solid var(--blush);
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: var(--chocolate);
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    transition: 0.2s ease;
+}
+
+.google-btn:hover {
+    background: var(--blush);
+}
+
+.google-icon {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+/* =========================================================
+   SIGN UP
+========================================================= */
+
+.signup-text {
+    margin-top: 21px;
+
+    font-size: 15px;
+
+    color: var(--copper);
+}
+
+.signup-text button {
+    border: none;
+
+    background: transparent;
+
+    color: var(--chocolate);
+
+    font-family: inherit;
+
+    font-size: inherit;
+
+    font-weight: 700;
+
+    margin-left: 5px;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+/* =========================================================
+   ROLE MESSAGE
+========================================================= */
+
+.role-message {
+    margin-top: 19px;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    background: rgba(217, 180, 157, 0.35);
+
+    font-size: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.role-message span {
+    color: var(--copper);
+}
+
+.role-message button {
+    border: none;
+
+    background: none;
+
+    color: var(--chocolate);
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+/* =========================================================
+   TERMS
+========================================================= */
+
+.terms {
+    margin-top: 19px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: var(--copper);
+}
+
+.terms button {
+    border: none;
+
+    background: none;
+
+    color: var(--chocolate);
+
+    font-family: inherit;
+
+    font-size: inherit;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 70px 15px 25px;
+
+        align-items: flex-start;
+    }
+
+    .vanya-brand {
+        top: 20px;
+        left: 20px;
+
+        font-size: 22px;
+    }
+
+    .vanya-logo-mark {
+        width: 29px;
+        height: 29px;
+
+        font-size: 17px;
+    }
+
+    .login-card {
+        padding: 30px 24px 25px;
+
+        border-radius: 17px;
+    }
+
+    .login-card h1 {
+        font-size: 30px;
+    }
+}
